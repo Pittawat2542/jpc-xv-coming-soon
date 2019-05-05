@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const jpcapp = express();
 
-jpcapp.use(express.static('public'));
+jpcapp.use(express.static(path.join(__dirname,'public')));
 
 jpcapp.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "comingsoon.html"));
