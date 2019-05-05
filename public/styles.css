@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+body {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#shadow {
+  position: fixed;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Audiowide", cursive;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  letter-spacing: 20px;
+  color: #fff;
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff,
+    0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+}
+
+#glow {
+  animation: neon1 linear infinite 2s;
+}
+@keyframes neon1 {
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+}
+
+#blink {
+  animation: blink linear infinite 2s;
+}
+@keyframes blink {
+  70% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0;
+  }
+  92.5% {
+    opacity: 1;
+  }
+}
