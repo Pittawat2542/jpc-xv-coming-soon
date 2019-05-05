@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get("/", (req, res) => {
+app.get("/่jpcapp", (req, res) => {
     res.sendFile(path.join(__dirname, "comingsoon.html"));
 });
 
